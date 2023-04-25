@@ -1,31 +1,24 @@
 //Atividade 5
 
-/*Faça um programa que receba um número inteiro e verifique se este número é par
-ou ímpar.*/
+/*Faça um programa que peça ao usuário para digitar 10 valores e some-os.*/
 
 #include <stdio.h>
 
-    int main () {
+int main () {
 
-        int n1;
+    int num = 0, cont_num = 0, cont = 0;
 
-        printf("Digite um numero para verificar se ele e impar ou par: ");
-        scanf("%d", & n1);
+    while (cont < 10)
+    {
+        printf("Digite um valor: ");
+        scanf("%d", & num);
 
-        if (n1 % 2 == 0)
-        {
-            printf("Este numero e par.");
-        }
-        
-        else
-        {
-            printf("Este numero e impar.");
-        }
-        
-
-    return 0;
-
+        cont ++;
+        cont_num = cont_num + num;
     }
+    
+    printf("A soma de todos os valores e: %d", cont_num);
 
+return 0;
 
-
+}

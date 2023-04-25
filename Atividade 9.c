@@ -1,34 +1,30 @@
 //Atividade 9
 
-/*Leia o salário de um trabalhador e o valor da prestação de um empréstimo. Se a
-prestação for maior que 20% do salário imprima: Empréstimo não concedido, caso
-contrário imprima: Empréstimo concedido.*/
+/*Faça um programa que leia um número inteiro N e depois imprima os N primeiros números
+naturais ímpares.*/
 
 #include <stdio.h>
 
-    int main () {
+int main () {
 
-        float salario, emprestimo, limite; 
+    int num, cont = 0, cont_num = 0;
 
-        printf("Digite o seu salario: ");
-        scanf("%f", & salario);
-        printf("Digite o valor da prestacao emprestimo que voce deseja: ");
-        scanf("%f", & emprestimo);
+    printf("Digite um numero inteiro: ");
+    scanf("%d", & num);
 
-        limite = salario * 0.2;
-
-        if (emprestimo > limite)
+    while (cont <= num)
+    {
+        cont_num = num;
+        cont++;
+        if (cont_num % 2 != 0)
         {
-            printf("Emprestimo concedido!");
+            printf("%d ", cont_num);
+            cont_num++;
         }
-
-        else
-        {
-            printf("Emprestimo nao concedido!");
-        }
-        
-    return 0;
 
     }
 
 
+return 0;
+
+}

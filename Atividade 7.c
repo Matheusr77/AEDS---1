@@ -1,37 +1,33 @@
 //Atividade 7
 
-/*Faça um programa que receba dois números e mostre o maior. Se por acaso, os dois
-números forem iguais, imprima a mensagem Números iguais.*/
+/*Faça um programa que leia 10 inteiros positivos, ignorando não positivos, e imprima sua
+média.*/
 
 #include <stdio.h>
 
-    int main () {
+int main () {
 
-        float n1, n2;
+    int num, media, i = 0, cont = 0, cont_num = 0;
 
-        printf("Digite um numero: ");
-        scanf("%f", & n1);
-        printf("Digite outro numero: ");
-        scanf("%f", & n2);
+    while (cont < 10)
+    {
+        printf("Digite um valor inteiro: ");
+        scanf("%d", & num);
 
-        if (n1 > n2)
+        cont ++;
+
+        if (num >= 0)
         {
-            printf("O maior numero e %.1f.", n1);
+            i ++;
+            cont_num = cont_num + num;
         }
-
-        else if (n2 > n1)
-        {
-            printf("O maior numero e %.1f.", n2);
-        }
-        
-        else if (n1 == n2)
-        {
-            printf("Numeros iguais.");
-        }
-
-
-    return 0;
 
     }
+    
+    media = cont_num / i;
+    printf("A media da soma dos numeros inteiros e positivos e %d", media);
 
 
+return 0;
+
+}

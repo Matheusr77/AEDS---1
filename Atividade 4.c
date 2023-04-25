@@ -1,34 +1,21 @@
 //Atividade 4
 
-/*Faça um programa que leia um número e, caso ele seja positivo, calcule e mostre:
-. O número digitado ao quadrado
-. A raiz quadrada do número digitado*/
+/*Escreva um programa que declare um inteiro, inicialize-o com 0, e incremente-o de 1000 em
+1000, imprimindo seu valor na tela, até que seu valor seja 100000 (cem mil).*/
 
 #include <stdio.h>
-#include <math.h>
 
-    int main () {
+int main () {
 
-        int n1, quadrado, raiz;
+    int cont = 0;
 
-        printf("Digite um numero: ");
-        scanf("%d", & n1);
-
-        if (n1 > 0)
-        {
-            quadrado = n1 * n1;
-            raiz = sqrt(n1);
-            printf("Este numero ao quadrado e sua raiz sao respectivamente: %d e %d", quadrado, raiz);
-        }
-
-        else
-        {
-            printf("Este numero e invalido");
-        }
-        
-    return 0;
-    
+    while (cont < 100000)
+    {
+        cont = cont + 1000;
+        printf("%d ", cont);
     }
+    
 
+return 0;
 
-
+}

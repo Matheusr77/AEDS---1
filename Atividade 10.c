@@ -1,46 +1,21 @@
 //Atividade 10
 
-/*Faça um programa que receba a altura e o sexo de uma pessoa e calcule e mostre
-seu peso ideal, utilizando as seguintes fórmulas (onde h corresponde à altura):
-. Homens: (72,7 * h) - 58
-. Mulheres: (62, 1 * h) – 44, 7*/
+/*Faça um programa que calcule e mostre a soma dos 50 primeiros números pares.*/
 
 #include <stdio.h>
 
+int main () {
 
-    int main () {
+    int num = 0;
 
-        float altura, peso;
-        char sexo;
-
-        printf("Digite sua altura: ");
-        scanf("%f", &altura); 
-        printf("Digite seu sexo(M OU F): ");
-        scanf(" %c", &sexo);       
-
-        if (sexo == 'M')
-        {
-            peso = (72.7 * altura) - 58;
-            printf("Seu peso ideal e: %.2f\n", peso);
-        }
-    
-        else if (sexo == 'F')
-        {
-            peso = (62.1 * altura) - 44.7;
-            printf("Seu peso ideal e: %.2f\n", peso);
-        }
-
-        else 
-        {
-        printf("Sexo invalido!\n");
-        }
-
-
-    return 0; 
-
+    for (int i = 0; i < 50; i++)
+    {
+        num = num + 2;
+        printf("%d ", num);
+        
     }
+    
 
+return 0;
 
-
-
-
+}

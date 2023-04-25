@@ -1,31 +1,26 @@
 //Atividade 12
 
-/*Ler um número inteiro. Se o número lido for negativo, escreva a mensagem “Número
-inválido”. Se o número for positivo, calcular o logaritmo deste número.*/
+/*Faça um programa que leia um número inteiro positivo N e imprima todos os números
+naturais de 0 até N em ordem decrescente.*/
 
 #include <stdio.h>
-#include <math.h>
 
-    int main () {
+int main () {
 
-        int n1, logaritmo;
+    int num, cont;
 
-        printf("Digite um numero inteiro: ");
-        scanf("%d", & n1);
+    printf("Digite um numero inteiro: ");
+    scanf("%d", & num);
 
-        if (n1 > 0)
-        {
-            logaritmo = log10(n1);
-            printf("O logaritmo deste numero e: %d", logaritmo);
-        }
+    cont = num;
 
-        else
-        {
-            printf("Numero invalido!");
-        }
-        
-    return 0;
-
+    while (cont >= 0)
+    {
+        printf("%d ", cont);
+        cont--; 
+    
     }
+    
+return 0;
 
-
+}

@@ -1,33 +1,23 @@
 //Atividade 3
 
-/*Leia um número real. Se o número for positivo imprima a raiz quadrada. Do contrário,
-imprima o número ao quadrado.*/
+/*Faça um algoritmo utilizando o comando while que mostra uma contagem regressiva na tela,
+iniciando em 10 e terminando em 0. Mostrar uma mensagem ͞FIM!͟ após a contagem.*/
 
 #include <stdio.h>
-#include <math.h>
 
-    int main () {
+int main () {
 
-        int n1, raiz;
 
-        printf("Digite um numero: ");
-        scanf("%d", & n1);
+    int cont = 11;
 
-        if (n1 >= 0)
-        {
-            raiz = sqrt(n1);
-            printf("A raiz quadrada deste numero e: %d", raiz);
-        }
-
-        else 
-        {
-            n1 = n1*n1;
-            printf("Este numero ao quadrdo e: %d", n1);
-        }
-
-    return 0;
-
+    while (cont > 0)
+    {
+        cont --;
+        printf("%d ", cont);
     }
 
+    printf("\nFIM!");
 
+return 0;
 
+}

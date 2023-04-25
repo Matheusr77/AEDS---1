@@ -1,32 +1,40 @@
 //Atividade 2
 
-/*Leia um número fornecido pelo usuário. Se esse número for positivo, calcule a raiz
-quadrada do número. Se o número for negativo, mostre uma mensagem dizendo que o
-número é inválido.*/
+/*Escreva um programa que escreva na tela, de 1 até 100, de 1 em 1, 3 vezes. A primeira vez
+deve usar a estrutura de repetição for, a segunda while, e a terceira do while.*/
 
 #include <stdio.h>
-#include <math.h>
 
-    int main () {
+int main () {
 
-        int n1, raiz;
+    //Utlizando o for
 
-        printf("Digite um numero: ");
-        scanf("%d", & n1);
-
-        if (n1 >= 0)
-        {
-            raiz = sqrt(n1);
-            printf("A raiz quadrada deste numero e: %d", raiz);
-        }
-
-        else 
-        {
-            printf("Este numero e invalido.");
-        }
-
-
-    return 0;
-
+    for (int i = 0; i < 100; i++)
+    {
+        printf("%d ", i);
     }
 
+    //Utilizando o while
+
+    int num = 0;
+
+    while (num < 100)
+    {
+        num ++;
+        printf("%d ", num);
+    }
+    
+    //Utilizando o do while
+
+    int cont = 0;
+
+    do
+    {
+        cont ++;
+        printf("%d ", cont);
+    } while (cont < 100);
+
+
+return 0;
+
+}

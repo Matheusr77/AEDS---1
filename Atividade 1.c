@@ -1,34 +1,25 @@
 //Atividade 1
 
-/*Faça um programa que receba dois números e mostre qual deles é o maior.*/
+/*Faça um programa que determine o mostre os cinco primeiros múltiplos de 3, considerando
+números maiores que 0.*/
 
 #include <stdio.h>
 
-    int main () {
+int main () {
 
-        float n1, n2;
+    int num, i = 1, cont = 0;
 
-        printf("Digite um numero: ");
-        scanf("%f", & n1);
-        printf("Digite outro numero: ");
-        scanf("%f", & n2);
-
-        if (n1 > n2)
-        {
-            printf("%.2f e o maior numero.", n1);
-        }  
-
-        else if (n2 > n1)
-        {
-            printf("%.2f e o maior numero.", n2);
-        }
-        
-    return 0;
-
+    while (cont < 5)
+    {
+        num = i * 3;
+        printf("%d ", num);
+        i ++;
+        cont ++;
     }
+    
 
+return 0;
 
-
-
+}
 
 
